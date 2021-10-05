@@ -45,8 +45,6 @@ const typeDefs = gql`
   type Query {
     user(email: String!): User
   }
-
-  type Mutation {}
 `;
 
 module.exports = typeDefs;

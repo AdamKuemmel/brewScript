@@ -57,25 +57,20 @@ const userSchema = new Schema({
   starter_questions: {
     coffee_prep: {
       type: String,
-      required: true,
     },
     coffee_strength: {
       type: String,
-      required: true,
     },
     additions: [
       {
         type: String,
-        required: true,
       },
     ],
     avg_cups: {
       type: String,
-      required: true,
     },
     bean_prep: {
       type: String,
-      required: true,
     },
   },
 });
