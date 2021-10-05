@@ -24,6 +24,27 @@ const productSchema = new Schema({
       trim: true,
     },
   ],
+  description: [
+    {
+      type: String,
+      required: false,
+      trim: true,
+    },
+  ],
+  region: [
+    {
+      type: String,
+      required: false,
+      trim: true,
+    },
+  ],
+  image: [
+    {
+      type: String,
+      required: false,
+      trim: true,
+    },
+  ],
 });
 
 const Product = model("Product", productSchema);
