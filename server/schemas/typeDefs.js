@@ -8,7 +8,7 @@ const typeDefs = gql`
     email: String
     password: String
     addresses: [Address]
-    starter_questions: [Questions]
+    starter_questions: Questions
   }
 
   type Questions {
