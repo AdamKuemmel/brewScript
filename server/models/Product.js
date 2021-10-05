@@ -19,11 +19,9 @@ const productSchema = new Schema({
   },
   themes: [
     {
-      theme_name: {
-        type: String,
-        required: false,
-        trim: true,
-      },
+      type: String,
+      required: false,
+      trim: true,
     },
   ],
 });
