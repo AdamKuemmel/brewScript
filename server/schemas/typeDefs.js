@@ -55,6 +55,8 @@ const typeDefs = gql`
   type Query {
     user(email: String!): User
     users: [User]
+    orders: [Order]
+    order(orderId: ID!): Order
   }
 `;
 
