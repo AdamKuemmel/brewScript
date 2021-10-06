@@ -6,7 +6,6 @@ import Question from "../components/Login-signup/Question";
 const Signup = () => {
   return (
     <main>
-      <Login />
       <Question />
     </main>
   );

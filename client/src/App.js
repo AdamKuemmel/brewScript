@@ -13,7 +13,7 @@ import Home from "./pages/Home";
 import UserLand from "./pages/UserLand";
 import Signup from "./pages/Signup";
 import Login from "./pages/Login";
-import NavBar from "./components/Navbar/Navbar";
+import Header from "./components/Navbar/Header";
 import Footer from "./components/Footer/Footer";
 
 //creates graphql link
@@ -43,12 +43,13 @@ function App() {
     <ApolloProvider client={client}>
       <Router>
         <div className="flex-column justify-flex-start min-100-vh">
-          <NavBar />
+          <Header />
+
           <div className="container">
             <Route exact path="/">
               <Home />
             </Route>
-            <Route exact path="/login">
+            {/* <Route exact path="/login">
               <Login />
             </Route>
             <Route exact path="/signup">
@@ -56,7 +57,7 @@ function App() {
             </Route>
             <Route exact path="/me">
               <UserLand />
-            </Route>
+            </Route> */}
           </div>
           <Footer />
         </div>
