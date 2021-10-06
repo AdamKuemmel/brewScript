@@ -1,6 +1,6 @@
 import React from "react";
 import { useQuery } from "@apollo/client";
-import MonthlyTheme from "../components/Home/MonthlyTheme";
+import MonthlyTheme from "../components/Home/monthlyTheme";
 
 const Home = () => {
   return (
