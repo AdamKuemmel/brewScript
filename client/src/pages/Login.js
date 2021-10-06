@@ -1,11 +1,11 @@
 import React from "react";
 import { useQuery } from "@apollo/client";
-import monthlyTheme from "../components/Home/monthlyTheme";
+import Logs from "../components/Login-signup/Logs";
 
 const Login = () => {
   return (
     <main>
-      <Login />
+      <Logs />
     </main>
   );
 };

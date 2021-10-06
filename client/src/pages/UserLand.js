@@ -1,6 +1,6 @@
 import React from "react";
 import { useQuery } from "@apollo/client";
-import monthlyTheme from "../components/Home/monthlyTheme";
+import monthlyTheme from "../components/Home/MonthlyTheme";
 import AddOn from "../components/UserLand/AddOn";
 import Review from "../components/UserLand/Review";
 

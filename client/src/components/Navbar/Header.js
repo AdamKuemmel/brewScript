@@ -13,12 +13,12 @@ const Header = () => {
     <>
       <Navbar bg="dark" variant="dark">
         <Container>
-          <Navbar.Brand href="#home">Navbar</Navbar.Brand>
+          <Navbar.Brand href="/home">Navbar</Navbar.Brand>
           <Nav className="me-auto">
-            <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#features">Bean Technique</Nav.Link>
-            <Nav.Link href="#pricing">Subscritions</Nav.Link>
-            <Nav.Link href="#signup">Signup</Nav.Link>
+            <Nav.Link href="/home">Home</Nav.Link>
+            <Nav.Link href="/beanForm">Bean Technique</Nav.Link>
+            <Nav.Link href="/pricing">Subscritions</Nav.Link>
+            <Nav.Link href="/signup">Signup</Nav.Link>
             <div>
               {Auth.loggedIn() ? (
                 <>

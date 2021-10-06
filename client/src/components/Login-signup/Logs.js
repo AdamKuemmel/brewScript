@@ -1,8 +1,8 @@
 import React from "react";
 import { useLocation, useHistory } from "react-router-dom";
 
-const Login = () => {
+const Logs = () => {
   return <div>plz do a login</div>;
 };
 
-export default Login;
+export default Logs;

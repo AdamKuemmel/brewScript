@@ -1,12 +1,12 @@
 import React from "react";
 import { useQuery } from "@apollo/client";
-import monthlyTheme from "../components/Home/monthlyTheme";
+import MonthlyTheme from "../components/Home/MonthlyTheme";
 
 const Home = () => {
   return (
-    <main>
-      <monthlyTheme />
-    </main>
+    <>
+      <MonthlyTheme />
+    </>
   );
 };
 

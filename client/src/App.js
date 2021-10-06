@@ -15,6 +15,8 @@ import Signup from "./pages/Signup";
 import Login from "./pages/Login";
 import Header from "./components/Navbar/Header";
 import Footer from "./components/Footer/Footer";
+import BeanForm from "./pages/BeanForm";
+import Pricing from "./pages/Pricing";
 
 //creates graphql link
 const httpLink = createHttpLink({
@@ -49,15 +51,21 @@ function App() {
             <Route exact path="/">
               <Home />
             </Route>
-            {/* <Route exact path="/login">
+            <Route exact path="/login">
               <Login />
             </Route>
             <Route exact path="/signup">
               <Signup />
             </Route>
+            <Route exact path="/beanForm">
+              <BeanForm />
+            </Route>
+            <Route exact path="/Pricing">
+              <Pricing />
+            </Route>
             <Route exact path="/me">
               <UserLand />
-            </Route> */}
+            </Route>
           </div>
           <Footer />
         </div>
