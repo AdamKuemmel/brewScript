@@ -20,5 +20,11 @@
   "bugs": {
     "url": "https://github.com/AdamKuemmel/brewScript/issues"
   },
-  "homepage": "https://github.com/AdamKuemmel/brewScript#readme"
+  "homepage": "https://github.com/AdamKuemmel/brewScript#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "concurrently": "^5.1.0"
+  }
 }
