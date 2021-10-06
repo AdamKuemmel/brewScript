@@ -57,6 +57,22 @@ const typeDefs = gql`
     users: [User]
     orders: [Order]
     order(orderId: ID!): Order
+    userOrders: Order
+  }
+
+  type Mutation {
+    login(email: String!, password: String!): Auth
+    addUser(
+      first_name: String!
+      last_name: String!
+      email: String!
+      password: String!
+      address1: String!
+      address2: String!
+      city: String!
+      state: String!
+      postal: Int!
+    ): Auth
   }
 `;
 
