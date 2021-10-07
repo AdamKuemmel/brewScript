@@ -11,11 +11,15 @@ import Auth from "../utils/auth";
 const UserLand = () => {
   const userId = Auth.getProfile().data._id;
   console.log("This is the userId: " + userId);
-  const { loading, data } = useQuery(QUERY_USER_ORDERS);
-  const profile = data?.user || {};
-  console.log(loading);
-  console.log(profile);
 
+  const { loading, data, error } = useQuery(QUERY_USER_ORDERS);
+  if (error) {
+    console.log(JSON.stringify(error));
+  }
+  console.log(loading);
+  if (data) {
+    console.log(data);
+  }
   return (
     <main>
       <Review />

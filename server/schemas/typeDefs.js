@@ -40,8 +40,8 @@ const typeDefs = gql`
   type Order {
     _id: ID
     customer: User
-    order_date: Int
-    fulfilled_date: Int
+    order_date: String
+    fulfilled_date: String
     paid_amount: Int
     rating: Int
     order_items: [Product]

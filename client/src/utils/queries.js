@@ -15,9 +15,11 @@ export const QUERY_USER_ORDERS = gql`
   query userOrders {
     userOrders {
       _id
-      customer
+      customer {
+        first_name
+      }
       order_date
-      fultilled_date
+      fulfilled_date
     }
   }
 `;

@@ -17,8 +17,11 @@ const resolvers = {
       console.log("This is the userOrders resolver.");
       if (context.user) {
         console.log("This is the context.");
-        console.log(context);
-        return Order.findAll({ customer: context.user._id });
+        const dborder = await Order.find({
+          customer: context.user._id,
+        }).populate("customer");
+        console.log(dborder);
+        return dborder;
       }
       throw new AuthernticationError("You need to be logged in.");
     },

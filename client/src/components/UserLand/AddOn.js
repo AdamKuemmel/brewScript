@@ -6,7 +6,7 @@ import { QUERY_ALL_PRODUCTS } from "../../utils/queries";
 
 const AddOn = () => {
   const { loading, data } = useQuery(QUERY_ALL_PRODUCTS);
-  console.log(data);
+  // console.log(data);
   return (
     <div>
       add thigns to you order! more coffeeee? arapatususses???? keychain and
