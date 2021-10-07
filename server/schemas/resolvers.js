@@ -14,9 +14,7 @@ const resolvers = {
       return User.find();
     },
     userOrders: async (parent, args, context) => {
-      console.log("This is the userOrders resolver.");
       if (context.user) {
-        console.log("This is the context.");
         const dborder = await Order.find({
           customer: context.user._id,
         }).populate("customer");
@@ -85,6 +83,14 @@ const resolvers = {
       }
       const token = signToken(user);
       return { token, user };
+    },
+
+    deleteUser: async (parent, args, context) => {
+      if (context.user) {
+        const user = await User.findOneAndDelete({ _id: context.user._id });
+        return user;
+      }
+      throw new AuthenticationError("You need to be logged in.");
     },
   },
   // logout

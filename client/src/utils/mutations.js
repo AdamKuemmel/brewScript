@@ -57,3 +57,11 @@ export const ADD_USER = gql`
     }
   }
 `;
+
+export const DELETE_USER = gql`
+  mutation deleteUser {
+    deleteUser {
+      first_name
+    }
+  }
+`;

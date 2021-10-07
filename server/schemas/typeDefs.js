@@ -79,6 +79,7 @@ const typeDefs = gql`
       additions: String
       bean_prep: String
     ): Auth
+    deleteUser: User
   }
 `;
 
