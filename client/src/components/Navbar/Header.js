@@ -3,6 +3,32 @@ import { Link } from "react-router-dom";
 import Auth from "../../utils/auth";
 import { Nav, Navbar } from "react-bootstrap";
 import { Container } from "react-bootstrap";
+import pumpkin from "../../images/pumpkin.png";
+
+const styles = {
+  navBar: {
+    display: "flex",
+    backgroundColor: "#0c0c0c",
+    justifyContent: "spaceBetween",
+  },
+  navbarNav: {},
+  buttons: {
+    // marginLeft: "49%",
+    // marginRight: "2%",
+    textAlign: "center",
+    justifyContent: "end",
+    color: "#edf1cf",
+  },
+  ak: {
+    marginLeft: "10%",
+  },
+  img: {
+    maxHeight: "9vh",
+  },
+  buttonText: {
+    color: "#edf1cf",
+  },
+};
 
 const Header = () => {
   const logout = (event) => {
@@ -12,10 +38,16 @@ const Header = () => {
   };
   return (
     <>
-      <Navbar bg="dark" variant="dark">
+      <Navbar style={styles.navBar} bg="dark" variant="dark">
         <Container>
-          <Navbar.Brand href="/home">Navbar</Navbar.Brand>
-          <Nav className="me-auto">
+          <Navbar.Brand href="/home">
+            <img
+              src={pumpkin}
+              // onClick={() => handlePageChange("Home")}
+              style={styles.img}
+            />
+          </Navbar.Brand>
+          <Nav style={styles.buttons} className="me-auto">
             <Nav.Link href="/home">Home</Nav.Link>
             <Nav.Link href="/beanForm">Bean Technique</Nav.Link>
             <Nav.Link href="/pricing">Subscritions</Nav.Link>
