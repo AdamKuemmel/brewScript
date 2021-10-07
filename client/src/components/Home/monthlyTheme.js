@@ -1,13 +1,16 @@
+//import things from other files to be used in this file
 import React from "react";
 import { useLocation, useHistory } from "react-router-dom";
 import pumpkin from "../../images/pumpkin.png";
 
+//style keys
 const styles = {
   img: {
     maxHeight: "13vh",
   },
 };
 
+//function to return JSX to browser
 const MonthlyTheme = () => {
   return (
     <>
@@ -39,4 +42,5 @@ const MonthlyTheme = () => {
   );
 };
 
+//export for use in other files
 export default MonthlyTheme;

@@ -1,10 +1,14 @@
+//import from other files to be used in this file
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { useMutation } from "@apollo/client";
 import { LOGIN_USER } from "../../utils/mutations";
-
 import Auth from "../../utils/auth";
 
+//style keys
+const styles = {};
+
+//login funtion check auth and and return required JSX
 const Logs = (props) => {
   const [formState, setFormState] = useState({ email: "", password: "" });
   const [login, { error, data }] = useMutation(LOGIN_USER);
@@ -91,4 +95,5 @@ const Logs = (props) => {
   );
 };
 
+//export for use in other apps
 export default Logs;

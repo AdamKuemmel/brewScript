@@ -1,6 +1,11 @@
+//import things needed in this file
 import React from "react";
 import { useLocation, useHistory } from "react-router-dom";
 
+//style keys
+const styles = {};
+
+//function to render JSX to browser
 const Footer = () => {
   const location = useLocation();
   const history = useHistory();
@@ -22,4 +27,5 @@ const Footer = () => {
   );
 };
 
+//export to be used in other files
 export default Footer;

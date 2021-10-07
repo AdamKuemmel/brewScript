@@ -1,6 +1,11 @@
+//import things needed in this file
 import React from "react";
 import { useLocation, useHistory } from "react-router-dom";
 
+//styling sheet
+const styles = {};
+
+//function to return jsx to front end
 const HowTo = () => {
   return (
     <>
@@ -24,4 +29,5 @@ const HowTo = () => {
   );
 };
 
+//export to be used in other files
 export default HowTo;
