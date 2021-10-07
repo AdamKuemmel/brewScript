@@ -1,11 +1,18 @@
 const db = require("../config/connection");
-const { User } = require("../models");
+const { User, Order } = require("../models");
 const userSeeds = require("./userSeeds.json");
+const orderSeeds = require("./orderSeeds.json");
 
 db.once("open", async () => {
   try {
     await User.deleteMany({});
-    await User.create(userSeeds);
+    await Order.deleteMany({});
+    const users = await User.create(userSeeds);
+    orderSeeds.map((order) => {
+      order.customer = users[0]._id;
+      return;
+    });
+    await Order.create(orderSeeds);
   } catch (err) {
     console.error(err);
     process.exit(1);
