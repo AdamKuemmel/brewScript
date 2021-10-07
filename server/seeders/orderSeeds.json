@@ -1,0 +1,49 @@
+[
+  {
+    "customer": "",
+    "order_date": "7/5/21",
+    "fulfilled_date": "7/28/21",
+    "paid_amount": 22.59,
+    "order_items": ["615e0fb709e301294caead74", "615e0fb709e301294caead7c"],
+    "rating": 4
+  },
+  {
+    "customer": "",
+    "order_date": "8/5/21",
+    "fulfilled_date": "8/28/21",
+    "paid_amount": 22.59,
+    "order_items": ["615e0fb709e301294caead7c", "615e0fb709e301294caead76"],
+    "rating": 4
+  },
+  {
+    "customer": "",
+    "order_date": "9/5/21",
+    "fulfilled_date": "9/27/21",
+    "paid_amount": 31.56,
+    "order_items": [
+      "615e0fb709e301294caead7c",
+      "615e0fb709e301294caead76",
+      "615e0fb709e301294caead84"
+    ],
+    "rating": 5
+  },
+  {
+    "customer": "",
+    "order_date": "10/5/21",
+    "paid_amount": 31.56,
+    "order_items": [
+      "615e0fb709e301294caead7c",
+      "615e0fb709e301294caead76",
+      "615e0fb709e301294caead84"
+    ]
+  },
+  {
+    "customer": "",
+    "order_date": "11/5/21",
+    "order_items": [
+      "615e0fb709e301294caead7c",
+      "615e0fb709e301294caead76",
+      "615e0fb709e301294caead84"
+    ]
+  }
+]

@@ -12,7 +12,6 @@ const orderSchema = new Schema({
   },
   fulfilled_date: {
     type: Date,
-    required: true,
   },
   paid_amount: {
     type: Number,
