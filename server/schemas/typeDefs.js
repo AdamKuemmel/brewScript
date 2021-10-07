@@ -39,7 +39,7 @@ const typeDefs = gql`
 
   type Order {
     _id: ID
-    user: [User]
+    customer: User
     order_date: Int
     fulfilled_date: Int
     paid_amount: Int
@@ -57,7 +57,8 @@ const typeDefs = gql`
     users: [User]
     orders: [Order]
     order(orderId: ID!): Order
-    userOrders: Order
+    userOrders: [Order]
+    allProducts: [Product]
   }
 
   type Mutation {
@@ -72,6 +73,11 @@ const typeDefs = gql`
       city: String!
       state: String!
       postal: Int!
+      coffee_prep: String
+      coffee_strength: String
+      avg_cups: String
+      additions: String
+      bean_prep: String
     ): Auth
   }
 `;

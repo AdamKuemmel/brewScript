@@ -14,20 +14,21 @@ const resolvers = {
       return User.find();
     },
     userOrders: async (parent, args, context) => {
-      console.log(context);
-      return Order.findAll({ customer: context.user._id });
+      console.log("This is the userOrders resolver.");
+      if (context.user) {
+        console.log("This is the context.");
+        console.log(context);
+        return Order.findAll({ customer: context.user._id });
+      }
+      throw new AuthernticationError("You need to be logged in.");
     },
-    // userOrders: async (parent, args, context) => {
-    //   return Order.find({ customer: context.id });
-    // },
-    // user items
     // products by category
     // view all products
-    // user previous orders & next orders
+    allProducts: async () => {
+      return Product.find();
+    },
   },
 
-  // MUTATIONS
-  // login
   Mutation: {
     addUser: async (
       parent,
@@ -41,16 +42,30 @@ const resolvers = {
         city,
         state,
         postal,
+        coffee_prep,
+        coffee_strength,
+        avg_cups,
+        additions,
+        bean_prep,
       }
     ) => {
+      console.log(postal);
       const user = await User.create({
         first_name,
         last_name,
         email,
         password,
         addresses: { address1, address2, city, state, postal },
+        starter_questions: {
+          coffee_prep,
+          coffee_strength,
+          avg_cups,
+          additions,
+          bean_prep,
+        },
       });
       const token = signToken(user);
+
       return { token, user };
     },
 
