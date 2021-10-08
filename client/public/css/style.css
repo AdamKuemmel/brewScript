@@ -4,6 +4,14 @@ body {
   background-size: 100%;
 }
 
+footer {
+  z-index: 1;
+}
+
+.signup {
+  z-index: 5;
+}
+
 h4 {
   color: whitesmoke;
   align-self: flex-end;

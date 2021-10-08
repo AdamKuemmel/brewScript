@@ -3,6 +3,27 @@ import { Link } from "react-router-dom";
 import Auth from "../../utils/auth";
 import { Nav, Navbar } from "react-bootstrap";
 import { Container } from "react-bootstrap";
+import navLogo from "../images/navLogo.png";
+
+const styles = {
+  img: {
+    maxHeight: "7vh",
+  },
+  buttons: {
+    alignSelf: "end",
+    fontFamily: "'Lora', serif",
+    fontSize: "2vh",
+  },
+  navContainer: {
+    display: "flex",
+    justifyContent: "spaceBetween",
+    backgroundColor: "#808080",
+  },
+  buttonContainer: {
+    float: "right",
+    backgroundColor: "#808080",
+  },
+};
 
 const Header = () => {
   const logout = (event) => {
@@ -12,14 +33,23 @@ const Header = () => {
   };
   return (
     <>
-      <Navbar bg="dark" variant="dark">
+      <Navbar style={styles.navContainer} variant="dark">
         <Container>
-          <Navbar.Brand href="/home">Navbar</Navbar.Brand>
-          <Nav className="me-auto">
-            <Nav.Link href="/home">Home</Nav.Link>
-            <Nav.Link href="/beanForm">Bean Technique</Nav.Link>
-            <Nav.Link href="/pricing">Subscritions</Nav.Link>
-            <Nav.Link href="/signup">Signup</Nav.Link>
+          <Navbar.Brand href="/home">
+            <img
+              src={process.env.PUBLIC_URL + navLogo}
+              href="/home"
+              style={styles.img}
+            />
+          </Navbar.Brand>
+          <Nav style={styles.buttonContainer}>
+            <Nav.Link style={styles.buttons} href="/beanForm">
+              Bean Technique
+            </Nav.Link>
+            <Nav.Link href="/pricing" style={styles.buttons}>
+              Subscriptions
+            </Nav.Link>
+
             <div>
               {Auth.loggedIn() ? (
                 <>
