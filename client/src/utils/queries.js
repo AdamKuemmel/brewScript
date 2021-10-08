@@ -38,6 +38,9 @@ export const QUERY_ALL_PRODUCTS = gql`
       product_name
       item_cost
       category
+      themes
+      image
+      description
     }
   }
 `;
