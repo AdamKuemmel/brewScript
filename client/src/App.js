@@ -48,6 +48,9 @@ function App() {
           <Header />
 
           <div className="container">
+            <Route exact path="/">
+              <Home />
+            </Route>
             <Route exact path="/home">
               <Home />
             </Route>

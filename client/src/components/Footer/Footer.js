@@ -1,5 +1,12 @@
 import React from "react";
 import { useLocation, useHistory } from "react-router-dom";
+import { Dropdown, DropdownButton } from "react-bootstrap";
+
+const styles = {
+  buttonText: {
+    color: "brown",
+  },
+};
 
 const Footer = () => {
   const location = useLocation();
@@ -7,14 +14,46 @@ const Footer = () => {
   return (
     <footer className="w-100 mt-auto text-dark p-4">
       <div className="container text-center mb-5">
-        {location.pathname !== "/" && (
-          <button
-            className="btn btn-dark mb-3"
-            onClick={() => history.goBack()}
+        <Dropdown>
+          <Dropdown.Toggle
+            id="dropdown-button-dark-example1"
+            drop="up"
+            variant="secondary"
+            style={styles.buttonText}
           >
-            &larr; Go Back
-          </button>
-        )}
+            Contact
+          </Dropdown.Toggle>
+
+          <Dropdown.Menu variant="dark">
+            <Dropdown.Item href="#/action-1" active>
+              About us
+            </Dropdown.Item>
+            <Dropdown.Item href="/home">Twitter</Dropdown.Item>
+            <Dropdown.Item href="#/action-3">Facebook</Dropdown.Item>
+            <Dropdown.Divider />
+            <Dropdown.Item href="#/action-4">Instagram</Dropdown.Item>
+            <Dropdown.Item href="#/action-5">Youtube</Dropdown.Item>
+          </Dropdown.Menu>
+        </Dropdown>
+        <Dropdown>
+          <Dropdown.Toggle
+            id="dropdown-button-dark-example1"
+            drop="up"
+            variant="secondary"
+          >
+            Company
+          </Dropdown.Toggle>
+
+          <Dropdown.Menu variant="dark">
+            <Dropdown.Item href="#/action-1" active>
+              Our Story
+            </Dropdown.Item>
+            <Dropdown.Item href="#/action-2">Team</Dropdown.Item>
+            <Dropdown.Item href="#/action-3">Careers</Dropdown.Item>
+            <Dropdown.Divider />
+            <Dropdown.Item href="#/action-4">Blog</Dropdown.Item>
+          </Dropdown.Menu>
+        </Dropdown>
         <h4>&copy; {new Date().getFullYear()} - BrewScript</h4>
       </div>
     </footer>

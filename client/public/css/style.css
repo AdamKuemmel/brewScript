@@ -1,0 +1,54 @@
+body {
+  background-image: url("https://www.superiorwallpapers.com/images/lthumbs/2015-06/8325_Baked-coffee-beans-HD.jpg");
+
+  background-size: 100%;
+}
+
+footer {
+  z-index: 1;
+}
+
+.signup {
+  z-index: 5;
+}
+
+h4 {
+  color: whitesmoke;
+  align-self: flex-end;
+}
+
+.card-img-top {
+  max-height: 100%;
+}
+
+.card-img-top-top {
+  max-width: 100%;
+  max-height: auto;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  height: 100%;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  background-color: slategray;
+  overflow: hidden;
+}
+
+.profile-card {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  height: 100%;
+}
+
+.profile-card-body {
+  display: flex;
+  flex-direction: column;
+  background-color: slategray;
+}
