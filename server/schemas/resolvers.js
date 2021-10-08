@@ -17,7 +17,9 @@ const resolvers = {
       if (context.user) {
         const dborder = await Order.find({
           customer: context.user._id,
-        }).populate("customer");
+        })
+          .populate("customer")
+          .populate("order_items");
         console.log(dborder);
         return dborder;
       }
@@ -65,6 +67,17 @@ const resolvers = {
           bean_prep,
         },
       });
+
+      const thisMonthsOrder = [
+        "615e0fb709e301294caead76",
+        "615e0fb709e301294caead7c",
+        "615e0fb709e301294caead79",
+      ];
+      const order = await Order.create({
+        customer: user._id,
+        order_date: Date.now(),
+        order_items: thisMonthsOrder,
+      });
       const token = signToken(user);
 
       return { token, user };
@@ -92,14 +105,16 @@ const resolvers = {
       }
       throw new AuthenticationError("You need to be logged in.");
     },
+    addProduct: async (parent, { orderId, productId }, context) => {
+      if (context.user) {
+        const order = await Order.findOneAndUpdate(
+          { _id: orderId },
+          { $push: { order_items: productId } }
+        );
+        return order;
+      }
+    },
   },
-  // logout
-  // Add order
-  // Edit order
-  // Delete order
-  // Add user
-  // Edit user
-  // Delete user
 };
 
 module.exports = resolvers;

@@ -65,3 +65,14 @@ export const DELETE_USER = gql`
     }
   }
 `;
+
+export const ADD_PRODUCT = gql`
+  mutation addProduct($orderId: ID!, $productId: ID!) {
+    addProduct(orderId: $orderId, productId: $productId) {
+      _id
+      customer {
+        _id
+      }
+    }
+  }
+`;

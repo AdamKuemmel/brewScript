@@ -17,9 +17,16 @@ export const QUERY_USER_ORDERS = gql`
       _id
       customer {
         first_name
+        last_name
       }
       order_date
       fulfilled_date
+      paid_amount
+      rating
+      order_items {
+        product_name
+        item_cost
+      }
     }
   }
 `;
@@ -29,6 +36,8 @@ export const QUERY_ALL_PRODUCTS = gql`
     allProducts {
       _id
       product_name
+      item_cost
+      category
     }
   }
 `;

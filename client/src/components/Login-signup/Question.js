@@ -133,13 +133,6 @@ const Question = () => {
                   value={formState.postal}
                   onChange={handleChange}
                 />
-                <button
-                  className="btn btn-block btn-info"
-                  style={{ cursor: "pointer" }}
-                  type="submit"
-                >
-                  Submit
-                </button>
                 <div>
                   <h1>How do you like to make your coffee?</h1>
                   <button
@@ -302,6 +295,13 @@ const Question = () => {
                     Ground
                   </button>
                 </div>
+                <button
+                  className="btn btn-block btn-info"
+                  style={{ cursor: "pointer" }}
+                  type="submit"
+                >
+                  Submit
+                </button>
               </form>
             )}
 

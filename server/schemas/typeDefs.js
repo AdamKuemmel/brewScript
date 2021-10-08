@@ -32,7 +32,7 @@ const typeDefs = gql`
   type Product {
     _id: ID
     product_name: String
-    item_cost: Int
+    item_cost: Float
     category: String
     themes: [String]
   }
@@ -42,7 +42,7 @@ const typeDefs = gql`
     customer: User
     order_date: String
     fulfilled_date: String
-    paid_amount: Int
+    paid_amount: Float
     rating: Int
     order_items: [Product]
   }
@@ -80,6 +80,7 @@ const typeDefs = gql`
       bean_prep: String
     ): Auth
     deleteUser: User
+    addProduct(orderId: ID!, productId: ID!): Order
   }
 `;
 
