@@ -10,16 +10,9 @@ import { DELETE_USER } from "../utils/mutations";
 import Auth from "../utils/auth";
 
 const UserLand = () => {
-  // const { loading, data, error } = useQuery(QUERY_USER_ORDERS);
-
-  // if (error) {
-  //   console.log(JSON.stringify(error));
-  // }
-  // console.log(loading);
-  // if (data) {
-  //   console.log(data);
-  // }
-
+  const userOrders = useQuery(QUERY_USER_ORDERS);
+  if (userOrders.data) {
+  }
   const [deleteUser, { data, error }] = useMutation(DELETE_USER);
   if (error) {
     console.log(JSON.stringify(error));
@@ -29,7 +22,6 @@ const UserLand = () => {
     event.preventDefault();
     try {
       const { data: stuff } = await deleteUser();
-      console.log(stuff);
       localStorage.removeItem("id_token");
       window.location.replace("/home");
     } catch (err) {
