@@ -20,6 +20,7 @@ const AddOn = () => {
   }
 
   const products = data?.allProducts || [];
+  console.log(products);
   let randomProductArray = [];
   if (data?.allProducts) {
     const arrayCopy = [...products];

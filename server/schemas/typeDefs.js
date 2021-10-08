@@ -35,6 +35,8 @@ const typeDefs = gql`
     item_cost: Float
     category: String
     themes: [String]
+    image: [String]
+    description: [String]
   }
 
   type Order {
