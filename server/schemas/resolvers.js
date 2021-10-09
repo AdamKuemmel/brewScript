@@ -68,11 +68,13 @@ const resolvers = {
         },
       });
 
+      const products = await Product.find();
       const thisMonthsOrder = [
-        "615e0fb709e301294caead76",
-        "615e0fb709e301294caead7c",
-        "615e0fb709e301294caead79",
+        products[0]._id,
+        products[1]._id,
+        products[2]._id,
       ];
+
       const order = await Order.create({
         customer: user._id,
         order_date: Date.now(),
