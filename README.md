@@ -75,7 +75,7 @@ SOFTWARE.
 - Apollo Server
 - Bcrypt
 - Bootstrap
-- Espress.js
+- Express.js
 - GraphQL
 - Heroku
 - JWT
