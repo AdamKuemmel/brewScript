@@ -26,12 +26,15 @@ BrewScript is a modern and innovative coffee company. It was formed by four frie
 
 ## User Story:
 
+```md
 AS AN avid coffee drinker
 I WANT to search and purchase coffee with coffee apparatus products
 SO THAT I create my own morning pick me ups.
+```
 
 ## Acceptance Criteria:
 
+```md
 GIVEN a e-commerce platform for coffee
 WHEN I load the app's store
 THEN I am presented with options for Login/Signup
@@ -43,6 +46,7 @@ WHEN I view the Bean Technique page
 THEN I am presented with learning videos on how to use all of the different Coffee Apparatuses.
 WHEN I am ready to checkout
 THEN I can go to my shopping cart and review items for delivery
+```
 
 ## License:
 
@@ -88,19 +92,15 @@ SOFTWARE.
 
 - Photo #1: Homepage:
   ![Homepage](https://user-images.githubusercontent.com/87154134/136829193-b5018b75-b574-4846-930a-e11f129c1150.png)
-public\images\Homepage.png)
 
 - Photo #2: Sign-Up Page: Where you answer a couple questions and we customize an order just for you!
   ![SignupPage](https://user-images.githubusercontent.com/87154134/136829237-a1a5c003-5289-42ab-9f71-69dcc4bfcbd6.png)
-nupPage.png)
 
 - Photo #3: Bean Technique Page: Where you can find walkthrough videos of how to use all of our Coffee Apparatuses!
- ![Beanteq](https://user-images.githubusercontent.com/87154134/136829278-9d31eedd-1c17-48f7-a373-fd5e3e7f4e5f.png)
-blic\images\Beanteq.png)
+  ![Beanteq](https://user-images.githubusercontent.com/87154134/136829278-9d31eedd-1c17-48f7-a373-fd5e3e7f4e5f.png)
 
 - Photo #4: Products for Purchase & Upcoming Order Page: Custom BrewScript logo apparel and Apparatuses!
- ![Products](https://user-images.githubusercontent.com/87154134/136829318-a40b73dd-3f21-4d6c-b13c-92726efe989c.png)
-mages\Products.png)
+  ![Products](https://user-images.githubusercontent.com/87154134/136829318-a40b73dd-3f21-4d6c-b13c-92726efe989c.png)
 
 ## Application Links:
 
@@ -108,11 +108,11 @@ mages\Products.png)
 
 - URL to the GitHub repository - https://github.com/AdamKuemmel/brewScript
 
+- Presentation in Google Slides - https://docs.google.com/presentation/d/10GjthdEO1uJI4oCBKgv1vlBtbJvN9e8NUmoz0ctjITA/edit#slide=id.gcb4469fffa_2_1
+
 ## Questions for the Authors:
 
 If you have questions, feel free to reach out to any of the authors below @ their Email and/or view their other projects @ their Github.
-
-- Presentation in Google Slides - https://docs.google.com/presentation/d/10GjthdEO1uJI4oCBKgv1vlBtbJvN9e8NUmoz0ctjITA/edit#slide=id.gcb4469fffa_2_1
 
 - Adam Kuemmel - Email @ adamkuemmel@gmail.com, and GiHub @ https://github.com/AdamKuemmel
 
