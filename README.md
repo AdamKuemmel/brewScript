@@ -87,19 +87,16 @@ SOFTWARE.
 ## Screenshots:
 
 - Photo #1: Homepage:
-  ![HomePage](homePage.png)
+  ![Homepage](client\public\images\Homepage.png)
 
-- Photo #2: Sign-Up Page: Where you answer a couple questions and we customize an order jsut for you!
-  ![SignupPage](SignupPage.png)
+- Photo #2: Sign-Up Page: Where you answer a couple questions and we customize an order just for you!
+  ![SignupPage](client\public\images\SignupPage.png)
 
 - Photo #3: Bean Technique Page: Where you can find walkthrough videos of how to use all of our Coffee Apparatuses!
-  ![BeanTechniques](BeanTechniques.png)
+  ![BeanTechniques](client\public\images\Beanteq.png)
 
-- Photo #4: Products for Purchase: Custom BrewScript logo apparel and Apparatuses!
-  ![](.png)
-
-- Photo #5: Upcoming Order Page: A Cart view of your newest soon to arrive order!
-  ![UpcomingOrder](UpcomingOrder.png)
+- Photo #4: Products for Purchase & Upcoming Order Page: Custom BrewScript logo apparel and Apparatuses!
+  ![Products](client\public\images\Products.png)
 
 ## Application Links:
 
