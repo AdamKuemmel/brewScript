@@ -68,8 +68,12 @@ const HowTo = () => {
             >
               Brew Guide: Yama Cold Brew Tower
             </a>
-            <br />
-            <br />
+
+            <img
+              src={halloweenbat}
+              // onClick={() => handlePageChange("Home")}
+              style={styles.img4}
+            />
           </h1>
         </div>
       </a>

@@ -88,6 +88,11 @@ const MonthlyTheme = () => {
           // onClick={() => handlePageChange("Home")}
           style={styles.img4}
         />
+        <img
+          src={halloweenbat}
+          // onClick={() => handlePageChange("Home")}
+          style={styles.img4}
+        />
 
         {/* <style>body</style> */}
       </a>

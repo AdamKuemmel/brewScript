@@ -14,9 +14,12 @@ const styles = {
     objectFit: "cover",
   },
   titles: {
+    textShadow: "5px 5px 6px black",
+    fontFamily: "helvetica",
     justifyContent: "center",
     textAlign: "center",
-    color: "white",
+
+    color: "redorange",
   },
   words: {
     text: "monospace",
@@ -75,7 +78,7 @@ const AddOn = () => {
   return (
     <div>
       <h1 style={styles.titles}>Anything to add to your next order?</h1>
-      <div className="row row-cols-1 row-cols-md-2 justify-content-center">
+      <div className="row row-cols-1 row-cols-md-2 ">
         {loading ? (
           <h1>Loading</h1>
         ) : (

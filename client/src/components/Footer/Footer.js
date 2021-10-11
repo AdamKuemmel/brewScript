@@ -12,7 +12,7 @@ const Footer = () => {
   const location = useLocation();
   const history = useHistory();
   return (
-    <footer className="w-100 mt-auto text-dark p-4">
+    <footer className="w-100 mt-auto text-dark p-4 sticky-bottom justify-content-center">
       <div className="container text-center mb-5">
         <Dropdown>
           <Dropdown.Toggle

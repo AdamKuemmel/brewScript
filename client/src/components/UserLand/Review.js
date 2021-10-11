@@ -6,8 +6,10 @@ import { Card, ListGroup, ListGroupItem } from "react-bootstrap";
 
 const styles = {
   titles: {
+    textShadow: "5px 5px 6px black",
+    fontFamily: "helvetica",
+    justifyContent: "center",
     textAlign: "center",
-    color: "white",
   },
   words: {
     color: "white",

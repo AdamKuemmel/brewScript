@@ -13,8 +13,14 @@ footer {
 }
 
 h4 {
-  color: whitesmoke;
+  color: orangered;
   align-self: flex-end;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
 }
 
 .card-img-top {
@@ -27,7 +33,7 @@ h4 {
 }
 
 h1 {
-  color: white;
+  color: orangered;
 }
 
 .card {
