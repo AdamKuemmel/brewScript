@@ -26,7 +26,13 @@ h4 {
   max-height: auto;
 }
 
+h1 {
+  color: white;
+}
+
 .card {
+  justify-content: center;
+  padding-right: "200px";
   display: flex;
   flex-direction: column;
   width: auto;
@@ -34,9 +40,10 @@ h4 {
 }
 
 .card-body {
+  padding-right: "20px";
   display: flex;
   flex-direction: column;
-  background-color: slategray;
+  background-color: rgb(82, 27, 27);
   overflow: hidden;
 }
 
@@ -49,6 +56,7 @@ h4 {
 
 .profile-card-body {
   display: flex;
-  flex-direction: column;
-  background-color: slategray;
+  justify-content: center;
+  flex-direction: row;
+  background-color: orange;
 }

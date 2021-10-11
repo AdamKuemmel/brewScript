@@ -2,6 +2,7 @@ import React from "react";
 import { useLocation, useHistory } from "react-router-dom";
 import pumpkin from "../images/pumpkin.png";
 import halloweentwitterheader from "../images/halloweentwitterheader.png";
+import halloweenbat from "../images/halloweenbat.png";
 
 const styles = {
   a: {
@@ -37,6 +38,12 @@ const styles = {
 
     marginRight: "80px",
     marginLeft: "80px",
+  },
+  img4: {
+    display: "block",
+    marginLeft: "auto",
+    marginRight: "auto",
+    width: "50%",
   },
   words: {
     color: "wheat",
@@ -75,6 +82,12 @@ const MonthlyTheme = () => {
           at BrewScript! Your box will be filled with all sorts of scares and
           thrills!
         </h1>
+
+        <img
+          src={halloweenbat}
+          // onClick={() => handlePageChange("Home")}
+          style={styles.img4}
+        />
 
         {/* <style>body</style> */}
       </a>
