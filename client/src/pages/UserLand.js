@@ -32,7 +32,11 @@ const UserLand = () => {
     <main>
       <Review />
       <AddOn />
-      <button onClick={handleDelete} className="btn btn-light" href="/home">
+      <button
+        onClick={handleDelete}
+        className="btn btn-light mt-4"
+        href="/home"
+      >
         Delete My Account
       </button>
     </main>

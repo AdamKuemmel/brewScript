@@ -12,7 +12,7 @@ const Footer = () => {
   const location = useLocation();
   const history = useHistory();
   return (
-    <footer className="w-100 mt-auto text-dark p-4">
+    <footer className="w-100 mt-auto text-dark p-4 sticky-bottom justify-content-center">
       <div className="container text-center mb-5">
         <Dropdown>
           <Dropdown.Toggle
@@ -28,11 +28,27 @@ const Footer = () => {
             <Dropdown.Item href="#/action-1" active>
               About us
             </Dropdown.Item>
-            <Dropdown.Item href="/home">Twitter</Dropdown.Item>
-            <Dropdown.Item href="#/action-3">Facebook</Dropdown.Item>
             <Dropdown.Divider />
-            <Dropdown.Item href="#/action-4">Instagram</Dropdown.Item>
-            <Dropdown.Item href="#/action-5">Youtube</Dropdown.Item>
+            <Dropdown.Item
+              href="https://twitter.com/BrewScript"
+              target="_blank"
+            >
+              Twitter
+            </Dropdown.Item>
+            <Dropdown.Divider />
+            <Dropdown.Item
+              href="https://www.facebook.com/BrewScript"
+              target="_blank"
+            >
+              Facebook
+            </Dropdown.Item>
+            <Dropdown.Divider />
+            <Dropdown.Item
+              href="https://www.instagram.com/brewscript/"
+              target="_blank"
+            >
+              Instagram
+            </Dropdown.Item>
           </Dropdown.Menu>
         </Dropdown>
         <Dropdown>

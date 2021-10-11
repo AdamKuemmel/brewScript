@@ -56,10 +56,9 @@ const Question = () => {
   };
 
   return (
-    <main className="signup flex-row justify-center mb-4">
+    <main className="signup col d-flex justify-content-center mb-4">
       <div className="col-12 col-lg-10">
         <div className="card">
-          <h4 className="card-header bg-dark text-light p-2">Login</h4>
           <div className="card-body">
             {data ? (
               <p>
@@ -136,7 +135,7 @@ const Question = () => {
                 <div>
                   <h1>How do you like to make your coffee?</h1>
                   <button
-                    className="btn btn-lg btn-light m-2"
+                    className="btn-group-toggle justify-content-center btn-lg btn-dark m-2"
                     name="coffee_prep"
                     onClick={handleChange}
                     value="French Press"
@@ -144,7 +143,7 @@ const Question = () => {
                     French Press
                   </button>
                   <button
-                    className="btn btn-lg btn-light m-2"
+                    className="btn-group-toggle justify-content-center btn-lg btn-dark m-2"
                     onClick={handleChange}
                     name="coffee_prep"
                     value="Coffee Pot"
@@ -152,7 +151,7 @@ const Question = () => {
                     Coffee Pot
                   </button>
                   <button
-                    className="btn btn-lg btn-light m-2"
+                    className="btn-group-toggle justify-content-center btn-lg btn-dark m-2"
                     onClick={handleChange}
                     name="coffee_prep"
                     value="Cold Brew"
@@ -160,7 +159,7 @@ const Question = () => {
                     Cold Brew
                   </button>
                   <button
-                    className="btn btn-lg btn-light m-2"
+                    className="btn-group-toggle justify-content-center btn-lg btn-dark m-2"
                     onClick={handleChange}
                     name="coffee_prep"
                     value="Pour Over"
@@ -171,7 +170,7 @@ const Question = () => {
                 <div>
                   <h1>How strong do you like your coffee?</h1>
                   <button
-                    className="btn btn-lg btn-light m-2"
+                    className="btn-group-toggle btn-lg justify-content-center btn-dark m-2"
                     onClick={handleChange}
                     name="coffee_strength"
                     value="Light - Pick me up!"
@@ -179,7 +178,7 @@ const Question = () => {
                     Light- Pick me Up!
                   </button>
                   <button
-                    className="btn btn-lg btn-light m-2"
+                    className="btn-group-toggle btn-lg btn-dark m-2"
                     onClick={handleChange}
                     name="coffee_strength"
                     value="Medium - It's only 2 PM"
@@ -187,7 +186,7 @@ const Question = () => {
                     Medium-Its only 2pm
                   </button>
                   <button
-                    className="btn btn-lg btn-light m-2"
+                    className="btn-group-toggle btn-lg btn-dark m-2"
                     onClick={handleChange}
                     name="coffee_strength"
                     value="String - I've got things to do!"
@@ -195,7 +194,7 @@ const Question = () => {
                     Strong-Ive got things to do!
                   </button>
                   <button
-                    className="btn btn-lg btn-light m-2"
+                    className="btn-group-toggle btn-lg btn-dark m-2"
                     onClick={handleChange}
                     name="coffee_strength"
                     value="Extra Strong - Get out of my Way!"
@@ -206,7 +205,7 @@ const Question = () => {
                 <div>
                   <h1>Do you like to add anything to your coffee?</h1>
                   <button
-                    className="btn btn-lg btn-light m-2"
+                    className="btn-group-toggle btn-lg btn-dark m-2"
                     onClick={handleChange}
                     name="additions"
                     value="Creamer"
@@ -214,7 +213,7 @@ const Question = () => {
                     Creamer
                   </button>
                   <button
-                    className="btn btn-lg btn-light m-2"
+                    className="btn-group-toggle btn-lg btn-dark m-2"
                     onClick={handleChange}
                     name="additions"
                     value="Sugar"
@@ -222,7 +221,7 @@ const Question = () => {
                     Sugar
                   </button>
                   <button
-                    className="btn btn-lg btn-light m-2"
+                    className="btn-group-toggle btn-lg btn-dark m-2"
                     onClick={handleChange}
                     name="additions"
                     value="Both"
@@ -230,7 +229,7 @@ const Question = () => {
                     Both
                   </button>
                   <button
-                    className="btn btn-lg btn-light m-2"
+                    className="btn-group-toggle btn-lg btn-dark m-2"
                     onClick={handleChange}
                     name="additions"
                     value="Various flavorings"
@@ -244,7 +243,7 @@ const Question = () => {
                     day?
                   </h1>
                   <button
-                    className="btn btn-lg btn-light m-2"
+                    className="btn-group-toggle btn-lg btn-dark m-2"
                     onClick={handleChange}
                     name="avg_cups"
                     value="1-2 Flying Solo"
@@ -252,7 +251,7 @@ const Question = () => {
                     1-2 flying solo
                   </button>
                   <button
-                    className="btn btn-lg btn-light m-2"
+                    className="btn-group-toggle btn-lg btn-dark m-2"
                     onClick={handleChange}
                     name="avg_cups"
                     value="3-4 takes two to tango"
@@ -260,7 +259,7 @@ const Question = () => {
                     3-4 it takes two tango
                   </button>
                   <button
-                    className="btn btn-lg btn-light m-2"
+                    className="btn-group-toggle btn-lg btn-dark m-2"
                     onClick={handleChange}
                     name="avg_cups"
                     value="5-6 might be an addiction"
@@ -268,7 +267,7 @@ const Question = () => {
                     5-6 it might an addiction
                   </button>
                   <button
-                    className="btn btn-lg btn-light m-2"
+                    className="btn-group-toggle btn-lg btn-dark m-2"
                     onClick={handleChange}
                     name="avg_cups"
                     value="7+ the entire office"
@@ -279,7 +278,7 @@ const Question = () => {
                 <div>
                   <h1>Whole Beans or Ground?</h1>
                   <button
-                    className="btn btn-lg btn-light m-2"
+                    className="btn-group-toggle btn-lg btn-dark m-2"
                     onClick={handleChange}
                     name="bean_prep"
                     value="Whole Beans"
@@ -287,7 +286,7 @@ const Question = () => {
                     Whole Beans
                   </button>
                   <button
-                    className="btn btn-lg btn-light m-2"
+                    className="btn-group-toggle btn-lg btn-dark m-2"
                     onClick={handleChange}
                     name="bean_prep"
                     value="Ground"
@@ -296,7 +295,7 @@ const Question = () => {
                   </button>
                 </div>
                 <button
-                  className="btn btn-block btn-info"
+                  className="btn-group-toggle btn-block btn-info"
                   style={{ cursor: "pointer" }}
                   type="submit"
                 >
