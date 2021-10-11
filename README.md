@@ -87,7 +87,8 @@ SOFTWARE.
 ## Screenshots:
 
 - Photo #1: Homepage:
-  ![Homepage](client\public\images\Homepage.png)
+ ![Homepage](https://user-images.githubusercontent.com/87154134/136729070-d8ef072e-dcac-45f2-8667-dfe35016d87c.png)
+Homepage.png)
 
 - Photo #2: Sign-Up Page: Where you answer a couple questions and we customize an order just for you!
   ![SignupPage](client\public\images\SignupPage.png)
