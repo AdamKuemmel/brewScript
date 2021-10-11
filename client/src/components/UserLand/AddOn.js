@@ -78,11 +78,7 @@ const AddOn = () => {
   return (
     <div>
       <h1 style={styles.titles}>Anything to add to your next order?</h1>
-<<<<<<< HEAD
-      <div className="row row-cols-1 row-cols-md-2 justify-content-center">
-=======
       <div className="row row-cols-1 justify-content-center row-cols-md-2 ">
->>>>>>> 7182ef462cb9e9fc414a8414ff5a7742690c1392
         {loading ? (
           <h1>Loading</h1>
         ) : (
