@@ -8,11 +8,36 @@ import { Card, ListGroup, ListGroupItem } from "react-bootstrap";
 
 const styles = {
   img: {
-    maxHeight: "20vh",
+    float: "left",
+    width: "100%",
+    height: "200%",
+    objectFit: "cover",
   },
   titles: {
+    textShadow: "5px 5px 6px black",
+    fontFamily: "helvetica",
+    justifyContent: "center",
     textAlign: "center",
+
+    color: "redorange",
+  },
+  words: {
+    text: "monospace",
     color: "white",
+  },
+  words1: {
+    color: "brown",
+    fontSize: "19px",
+    textOverflow: "ellipsis",
+  },
+  words2: {
+    textOverflow: "ellipsis",
+    text: "monospace",
+    color: "white",
+
+    /* Required for text-overflow to do anything */
+    whiteSpace: "nowrap",
+    overflow: "hidden",
   },
 };
 
@@ -53,23 +78,29 @@ const AddOn = () => {
   return (
     <div>
       <h1 style={styles.titles}>Anything to add to your next order?</h1>
-      <div className="container row">
+      <div className="row row-cols-1 justify-content-center row-cols-md-2 ">
         {loading ? (
           <h1>Loading</h1>
         ) : (
           randomProductArray.map((product) => (
-            <Card style={{ width: "18rem" }}>
+            <Card style={{ width: "18rem", height: "100%" }}>
               <Card.Img
                 variant="top"
-                style={styles.img}
+                style={{ minHeight: "220px", maxHeight: "220px" }}
                 src={"/images/" + product.image[0]}
               />
               <Card.Body>
-                <Card.Title>{product.product_name}</Card.Title>
-                <Card.Text>{product.description[0]}</Card.Text>
+                <Card.Title style={styles.words}>
+                  {product.product_name}
+                </Card.Title>
+                <Card.Text style={styles.words2}>
+                  {product.description[0]}
+                </Card.Text>
               </Card.Body>
               <ListGroup className="list-group-flush">
-                <ListGroupItem>{product.item_cost}</ListGroupItem>
+                <ListGroupItem style={styles.words1}>
+                  {product.item_cost}
+                </ListGroupItem>
               </ListGroup>
               <Card.Body>
                 <button

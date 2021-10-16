@@ -62,7 +62,7 @@ db.once("open", async () => {
       description:
         "A variety discovered in Finca Los Bellotos, El Salvador by Sofia and Fernando Alberto Pacas. It was first thought to be Geisha because of its aromatic profile. However, after studying its phenotype characteristics and DNA testing, it was determined to be a new, unclassified variety genetically similar to varieties found in the Agaro region of Ethiopia.either a Typica variety or a French Mission.",
       region: "El Salvador",
-      image: "BERNANDINA.jpg",
+      image: "bernardina.jpg",
     },
     {
       product_name: "Bourbon",
@@ -231,7 +231,7 @@ db.once("open", async () => {
       themes: "Spooky",
       description: "A Bourbon cultivar grown in Rwanda.",
       region: "Africa",
-      image: "Mayagüez.jpg",
+      image: "Mayaguez.jpg",
     },
     {
       product_name: "Mocha",
@@ -330,7 +330,7 @@ db.once("open", async () => {
       themes: "Spooky",
       description: "Our best material t-shirt with the brewScript logo",
       region: "United States",
-      image: "Sagada.jpg",
+      image: "tshirt.jpg",
     },
     {
       product_name: "Mug",
@@ -339,7 +339,7 @@ db.once("open", async () => {
       themes: "Spooky",
       description: "A cold/hot resistant mug with our brewScript logo",
       region: "United States",
-      image: "Sagada.jpg",
+      image: "mug.jpg",
     },
     {
       product_name: "Thermos",
@@ -349,7 +349,53 @@ db.once("open", async () => {
       description:
         "Superior cold and hot protection in a large size 48 ounce stainless steel thermos",
       region: "United States",
-      image: "Sagada.jpg",
+      image: "thermos.jpg",
+    },
+    {
+      product_name: "Pooch Tank Top",
+      item_cost: 17.99,
+      category: "Swag",
+      themes: "Spooky",
+      description:
+        "Swag for your pup!  100% Cotton material with a brewScript logo to boot!",
+      region: "United States",
+      image: "dogtank.jpg",
+    },
+    {
+      product_name: "Face Mask",
+      item_cost: 17.99,
+      category: "Swag",
+      themes: "Spooky",
+      description: "Protection from the environments with our brewScript logo!",
+      region: "United States",
+      image: "facemask.jpg",
+    },
+    {
+      product_name: "Baseball shirt 3/4 length",
+      item_cost: 17.99,
+      category: "Swag",
+      themes: "Spooky",
+      description: "100% Cotton baseball tshirt with 3/4 length sleeves.",
+      region: "United States",
+      image: "baseballshirt.jpg",
+    },
+    {
+      product_name: "Trucker Hat",
+      item_cost: 17.99,
+      category: "Swag",
+      themes: "Spooky",
+      description: "Snap Back trucker hat with our brewScript logo!",
+      region: "United States",
+      image: "truckerhat.jpg",
+    },
+    {
+      product_name: "Winter Hat",
+      item_cost: 17.99,
+      category: "Swag",
+      themes: "Spooky",
+      description: "Wool winter hat to protect you from the cold",
+      region: "United States",
+      image: "winterhat.jpg",
     },
     {
       product_name: "French Press P3",

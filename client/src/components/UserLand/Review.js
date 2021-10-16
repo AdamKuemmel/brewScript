@@ -5,12 +5,18 @@ import { QUERY_USER_ORDERS } from "../../utils/queries";
 import { Card, ListGroup, ListGroupItem } from "react-bootstrap";
 
 const styles = {
-  img: {
-    maxHeight: "20vh",
-  },
   titles: {
+    textShadow: "5px 5px 6px black",
+    fontFamily: "helvetica",
+    justifyContent: "center",
     textAlign: "center",
+  },
+  words: {
     color: "white",
+  },
+  words1: {
+    color: "brown",
+    fontSize: "19px",
   },
 };
 
@@ -27,17 +33,21 @@ const Review = () => {
   return (
     <div>
       <h1 style={styles.titles}>Your Upcoming Order!</h1>
-      <div className="container row">
+      <div className="container row justify-content-center mt-4">
         {loading ? (
           <h1>Loading</h1>
         ) : (
           orderId.order_items.map((product) => (
             <Card style={{ width: "18rem" }}>
-              <Card.Body>
-                <Card.Title>{product.product_name}</Card.Title>
+              <Card.Body style={styles.body}>
+                <Card.Title style={styles.words}>
+                  {product.product_name}
+                </Card.Title>
               </Card.Body>
               <ListGroup className="list-group-flush">
-                <ListGroupItem>{product.item_cost}</ListGroupItem>
+                <ListGroupItem style={styles.words1}>
+                  {product.item_cost}
+                </ListGroupItem>
               </ListGroup>
             </Card>
           ))
