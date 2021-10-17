@@ -1,8 +1,6 @@
 import React from "react";
 import { useLocation, useHistory } from "react-router-dom";
 import pumpkin from "../images/pumpkin.png";
-import halloweentwitterheader from "../images/halloweentwitterheader.png";
-import halloweenbat from "../images/halloweenbat.png";
 
 const styles = {
   container: {
@@ -35,8 +33,6 @@ const styles = {
     marginRight: "80px",
     marginLeft: "80px",
   },
-
-
 
   img4: {
     display: "block",
@@ -81,30 +77,7 @@ const MonthlyTheme = () => {
         <div>
           <img src={pumpkin} style={styles.img1} />
         </div>
-
       </div>
-
-
-        <h1 style={styles.words}>
-          Do things seem a little spOoOky? That's because its spooky month here
-          at BrewScript! Your box will be filled with all sorts of scares and
-          thrills!
-        </h1>
-
-        <img
-          src={halloweenbat}
-          // onClick={() => handlePageChange("Home")}
-          style={styles.img4}
-        />
-        <img
-          src={halloweenbat}
-          // onClick={() => handlePageChange("Home")}
-          style={styles.img4}
-        />
-
-        {/* <style>body</style> */}
-      </a>
-
     </>
   );
 };
