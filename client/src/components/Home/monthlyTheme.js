@@ -14,7 +14,7 @@ const styles = {
   },
 
   img1: {
-    maxHeight: "70vh",
+    maxHeight: "55vh",
   },
   learnButton: {
     backgroundColor: "#b7631c",
