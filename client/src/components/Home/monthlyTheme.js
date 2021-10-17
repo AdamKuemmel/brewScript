@@ -44,11 +44,10 @@ const styles = {
   words: {
     color: "wheat",
     fontFamily: "Creepster",
-    fontSize: "6vh",
+
     marginTop: "8%",
     borderStyle: "double black",
     textShadow: "5px 5px 6px black",
-    marginRight: "15%",
   },
   words2: {
     color: "wheat",
@@ -65,7 +64,9 @@ const MonthlyTheme = () => {
     <>
       <div style={styles.container} id="container">
         <div style={styles.container2}>
-          <h1 style={styles.words}>Do things seem a little spOoOky?</h1>
+          <h1 id="words1" style={styles.words}>
+            Do things seem a little spOoOky?
+          </h1>
           <h1 id="words2" class="words2">
             That's because its spooky month here at BrewScript! Your box will be
             filled with all sorts of scares and thrills
@@ -75,7 +76,7 @@ const MonthlyTheme = () => {
           </button>
         </div>
         <div>
-          <img src={pumpkin} style={styles.img1} />
+          <img src={pumpkin} style={styles.img1} class="homePump" />
         </div>
       </div>
     </>

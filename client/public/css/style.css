@@ -63,7 +63,6 @@ h1 {
   justify-content: center;
   flex-direction: row;
   background-color: orange;
-
 }
 
 .buttonsLog {
@@ -91,13 +90,22 @@ h1 {
   justify-content: flex-end;
   float: right;
 }
+#words1 {
+  font-size: 6vh;
+  margin-right: 15%;
+}
+
 .words2 {
   color: wheat;
   font-family: "Josefin Sans", sans-serif;
 }
+.homePump {
+  max-height: 55vh;
+}
 
 /* mobile */
 @media screen and (max-width: 990px) {
+  /* howitworks component */
   #container {
     flex-direction: column;
     text-align: center;
@@ -113,9 +121,16 @@ h1 {
     flex-direction: column;
     text-align: center;
   }
-  #words2 {
-    font-size: 7vh;
-  }
-=======
 
+  /* home component */
+  #words1 {
+    font-size: 4vh;
+    margin-right: 0;
+  }
+  #words2 {
+    font-size: 5vh;
+  }
+  .homePump {
+    max-height: 45vh;
+  }
 }
