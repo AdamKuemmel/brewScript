@@ -4,7 +4,25 @@ import { Dropdown, DropdownButton } from "react-bootstrap";
 
 const styles = {
   buttonText: {
-    color: "brown",
+    color: "black",
+    backgroundColor: "transparent",
+    border: "0",
+    fontFamily: "'Josefin Sans', sans-serif",
+    fontSize: "4vh",
+  },
+  container: {
+    display: "flex",
+    justifyContent: "center",
+  },
+  button: {
+    marginLeft: "1%",
+    marginRight: "3%",
+  },
+  copyR: {
+    fontFamily: "'Josefin Sans', sans-serif",
+    fontSize: "3vh",
+    textAlign: "center",
+    color: "black",
   },
 };
 
@@ -12,6 +30,12 @@ const Footer = () => {
   const location = useLocation();
   const history = useHistory();
   return (
+
+    <footer sticky="bottom">
+      <div style={styles.container}>
+        <Dropdown style={styles.button}>
+          <Dropdown.Toggle drop="up" style={styles.buttonText}>
+
     <footer className="w-100 mt-auto text-dark p-4 sticky-bottom justify-content-center">
       <div className="container text-center mb-5">
         <Dropdown>
@@ -21,6 +45,7 @@ const Footer = () => {
             variant="secondary"
             style={styles.buttonText}
           >
+
             Contact
           </Dropdown.Toggle>
 
@@ -53,7 +78,7 @@ const Footer = () => {
         </Dropdown>
         <Dropdown>
           <Dropdown.Toggle
-            id="dropdown-button-dark-example1"
+            style={styles.buttonText}
             drop="up"
             variant="secondary"
           >
@@ -70,8 +95,10 @@ const Footer = () => {
             <Dropdown.Item href="#/action-4">Blog</Dropdown.Item>
           </Dropdown.Menu>
         </Dropdown>
-        <h4>&copy; {new Date().getFullYear()} - BrewScript</h4>
       </div>
+      <h4 style={styles.copyR}>
+        &copy; {new Date().getFullYear()} - BrewScript
+      </h4>
     </footer>
   );
 };
