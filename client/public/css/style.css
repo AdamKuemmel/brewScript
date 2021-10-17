@@ -63,6 +63,7 @@ h1 {
   justify-content: center;
   flex-direction: row;
   background-color: orange;
+
 }
 
 .buttonsLog {
@@ -115,4 +116,6 @@ h1 {
   #words2 {
     font-size: 7vh;
   }
+=======
+
 }
