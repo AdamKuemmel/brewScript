@@ -1,19 +1,15 @@
 import React from "react";
 import { useLocation, useHistory } from "react-router-dom";
 import pumpkin from "../images/pumpkin.png";
-import halloweentwitterheader from "../images/halloweentwitterheader.png";
-import halloweenbat from "../images/halloweenbat.png";
 
 const styles = {
   container: {
     display: "flex",
     backgroundColor: "#808080",
-    flexDirection: "row",
-    marginTop: "8%",
+    justifyContent: "space-around",
+    marginTop: "5%",
   },
-  container2: {
-    flexDirection: "row",
-  },
+  container2: {},
 
   img1: {
     maxHeight: "70vh",
@@ -55,26 +51,31 @@ const styles = {
   },
 };
 
-const MonthlyTheme = () => {
+const HowItWorks = () => {
   return (
     <>
       <div style={styles.container}>
         <div style={styles.container2}>
-          <h1 style={styles.words}>Do things seem a little spOoOky?</h1>
-          <h1 style={styles.words2}>
-            That's because its spooky month here at BrewScript! Your box will be
-            filled with all sorts of scares and thrills
+          <h1>Step 1:</h1>
+          <h1>Sign Up</h1>
+          <h1>
+            Answer some questions about your coffee habits and what you love
+            about coffee.
           </h1>
-          <button href="/pricing" style={styles.learnButton} id="learnButton">
-            Click here to learn more
-          </button>
         </div>
-        <div>
-          <img src={pumpkin} style={styles.img1} />
+        <div style={styles.container2}>
+          <h1>Step 2:</h1>
+          <h1>hello!</h1>
+          <h1>hello!</h1>
+        </div>
+        <div style={styles.container2}>
+          <h1>Step 3:</h1>
+          <h1>hello!</h1>
+          <h1>hello!</h1>
         </div>
       </div>
     </>
   );
 };
 
-export default MonthlyTheme;
+export default HowItWorks;

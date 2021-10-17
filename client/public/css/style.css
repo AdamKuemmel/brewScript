@@ -1,7 +1,5 @@
-body {
-  background-image: url("https://www.superiorwallpapers.com/images/lthumbs/2015-06/8325_Baked-coffee-beans-HD.jpg");
-
-  background-size: 100%;
+#body {
+  background-color: #808080;
 }
 
 footer {
@@ -65,4 +63,30 @@ h1 {
   justify-content: center;
   flex-direction: row;
   background-color: orange;
+}
+
+.buttonsLog {
+  text-decoration: none;
+  font-size: 4vh;
+  text-align: center;
+  margin-left: 2vh;
+  margin-top: 1vh;
+  color: black;
+  border-right: 1px;
+  border-color: whitesmoke;
+}
+.buttonsLog:hover {
+  color: #b7631c;
+}
+
+#buttonCon {
+}
+
+#navbar-nav {
+  float: right;
+}
+
+#colCon {
+  justify-content: flex-end;
+  float: right;
 }

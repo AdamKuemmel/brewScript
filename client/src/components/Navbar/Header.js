@@ -7,16 +7,15 @@ import navLogo from "../images/navLogo.png";
 
 const styles = {
   img: {
-    maxHeight: "7vh",
+    maxHeight: "9vh",
   },
   buttons: {
     alignSelf: "end",
-    fontFamily: "'Lora', serif",
-    fontSize: "2vh",
+    fontFamily: "'Josefin Sans', sans-serif",
+    fontSize: "4vh",
+    float: "right",
   },
   navContainer: {
-    display: "flex",
-    justifyContent: "spaceBetween",
     backgroundColor: "#808080",
   },
   buttonContainer: {
@@ -33,8 +32,13 @@ const Header = () => {
   };
   return (
     <>
-      <Navbar style={styles.navContainer} variant="dark">
-        <Container>
+      <Navbar
+        collapseOnSelect
+        expand="lg"
+        sticky="top"
+        style={styles.navContainer}
+      >
+        <Container id="buttonCon">
           <Navbar.Brand href="/home">
             <img
               src={process.env.PUBLIC_URL + navLogo}
@@ -42,36 +46,33 @@ const Header = () => {
               style={styles.img}
             />
           </Navbar.Brand>
-          <Nav style={styles.buttonContainer}>
-            <Nav.Link style={styles.buttons} href="/beanForm">
-              Bean Technique
-            </Nav.Link>
-            <Nav.Link href="/pricing" style={styles.buttons}>
-              Subscriptions
-            </Nav.Link>
+          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+          <Navbar.Collapse id="colCon">
+            <Nav style={styles.buttons} id="navbar-nav">
+              <Nav.Link href="/beanForm">Bean Technique</Nav.Link>
+              <Nav.Link href="/pricing">Subscriptions</Nav.Link>
 
-            <div>
               {Auth.loggedIn() ? (
                 <>
-                  <Link className="btn btn-lg btn-primary m-2" to="/me">
+                  <Link className="buttonsLog" to="/me">
                     My Profile
                   </Link>
-                  <button className="btn btn-lg btn-light m-2" onClick={logout}>
+                  <button className="buttonsLog" onClick={logout}>
                     Logout
                   </button>
                 </>
               ) : (
                 <>
-                  <Link className="btn btn-lg btn-primary m-2" to="/login">
+                  <Link className="buttonsLog" to="/login">
                     Login
                   </Link>
-                  <Link className="btn btn-lg btn-light m-2" to="/signup">
+                  <Link className="buttonsLog" to="/signup">
                     Signup
                   </Link>
                 </>
               )}
-            </div>
-          </Nav>
+            </Nav>
+          </Navbar.Collapse>
         </Container>
       </Navbar>
     </>
