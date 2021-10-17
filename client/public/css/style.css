@@ -90,3 +90,29 @@ h1 {
   justify-content: flex-end;
   float: right;
 }
+.words2 {
+  color: wheat;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+/* mobile */
+@media screen and (max-width: 990px) {
+  #container {
+    flex-direction: column;
+    text-align: center;
+  }
+  #mobileHIT {
+    flex-direction: column;
+    text-align: center;
+  }
+  .mobileCont {
+    font-size: 4vh;
+  }
+  #container {
+    flex-direction: column;
+    text-align: center;
+  }
+  #words2 {
+    font-size: 7vh;
+  }
+}

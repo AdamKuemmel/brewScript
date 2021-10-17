@@ -8,11 +8,9 @@ const styles = {
     backgroundColor: "#808080",
     justifyContent: "space-around",
     marginTop: "5%",
-  },
-  container2: {},
-
-  img1: {
-    maxHeight: "70vh",
+    textAlign: "center",
+    marginBottom: "5%",
+    marginTop: "10%",
   },
   learnButton: {
     backgroundColor: "#b7631c",
@@ -23,55 +21,59 @@ const styles = {
     border: "2px solid black",
   },
 
-  img3: {
-    maxHeight: "18vh",
-    paddingTop: "20px",
-    maxHeight: "18vh",
-
-    marginRight: "80px",
-    marginLeft: "80px",
-  },
-
-  words: {
+  line1: {
     color: "wheat",
     fontFamily: "Creepster",
     fontSize: "6vh",
     marginTop: "8%",
     borderStyle: "double black",
     textShadow: "5px 5px 6px black",
-    marginRight: "15%",
   },
-  words2: {
+  line2: {
     color: "wheat",
     fontFamily: "'Josefin Sans', sans-serif",
-    fontSize: "45px",
+    fontSize: "5vh",
     borderStyle: "double black",
     textShadow: "5px 5px 6px black",
-    marginRight: "15%",
+
+    fontWeight: "bold",
+  },
+  line3: {
+    color: "wheat",
+    fontFamily: "'Josefin Sans', sans-serif",
+    fontSize: "3vh",
+    borderStyle: "double black",
+    textShadow: "5px 5px 6px black",
   },
 };
 
 const HowItWorks = () => {
   return (
     <>
-      <div style={styles.container}>
-        <div style={styles.container2}>
-          <h1>Step 1:</h1>
-          <h1>Sign Up</h1>
-          <h1>
+      <div style={styles.container} id="mobileHIT">
+        <div>
+          <h1 style={styles.line1}>Step 1:</h1>
+          <h1 style={styles.line2}>Sign Up</h1>
+          <h1 style={styles.line3}>
             Answer some questions about your coffee habits and what you love
             about coffee.
           </h1>
         </div>
-        <div style={styles.container2}>
-          <h1>Step 2:</h1>
-          <h1>hello!</h1>
-          <h1>hello!</h1>
+        <div>
+          <h1 style={styles.line1}>Step 2:</h1>
+          <h1 style={styles.line2}>Pick your Brew</h1>
+          <h1 style={styles.line3} class="mobileCont">
+            Customize your your box with coffee add-ons, BrewScript swag, and
+            different brewing apparatuses.
+          </h1>
         </div>
-        <div style={styles.container2}>
-          <h1>Step 3:</h1>
-          <h1>hello!</h1>
-          <h1>hello!</h1>
+        <div>
+          <h1 style={styles.line1}>Step 3:</h1>
+          <h1 style={styles.line2}>Coffee is Coming</h1>
+          <h1 style={styles.line3}>
+            Sit back and wait for your beans imported from all around the world
+            to arrive.
+          </h1>
         </div>
       </div>
     </>

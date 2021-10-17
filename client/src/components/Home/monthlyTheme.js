@@ -8,7 +8,7 @@ const styles = {
   container: {
     display: "flex",
     backgroundColor: "#808080",
-    flexDirection: "row",
+
     marginTop: "8%",
   },
   container2: {
@@ -58,10 +58,10 @@ const styles = {
 const MonthlyTheme = () => {
   return (
     <>
-      <div style={styles.container}>
+      <div style={styles.container} id="container">
         <div style={styles.container2}>
           <h1 style={styles.words}>Do things seem a little spOoOky?</h1>
-          <h1 style={styles.words2}>
+          <h1 id="words2" class="words2">
             That's because its spooky month here at BrewScript! Your box will be
             filled with all sorts of scares and thrills
           </h1>
