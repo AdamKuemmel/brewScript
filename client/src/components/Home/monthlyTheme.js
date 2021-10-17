@@ -13,9 +13,6 @@ const styles = {
     flexDirection: "row",
   },
 
-  img1: {
-    maxHeight: "55vh",
-  },
   learnButton: {
     backgroundColor: "#b7631c",
     fontFamily: "'Josefin Sans', sans-serif",
