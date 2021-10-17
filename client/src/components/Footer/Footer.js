@@ -30,12 +30,6 @@ const Footer = () => {
   const location = useLocation();
   const history = useHistory();
   return (
-
-    <footer sticky="bottom">
-      <div style={styles.container}>
-        <Dropdown style={styles.button}>
-          <Dropdown.Toggle drop="up" style={styles.buttonText}>
-
     <footer className="w-100 mt-auto text-dark p-4 sticky-bottom justify-content-center">
       <div className="container text-center mb-5">
         <Dropdown>
@@ -45,7 +39,6 @@ const Footer = () => {
             variant="secondary"
             style={styles.buttonText}
           >
-
             Contact
           </Dropdown.Toggle>
 
