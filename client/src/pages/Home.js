@@ -6,16 +6,16 @@ import Parallax from "../components/Home/Parallax";
 import Parallax2 from "../components/Home/Parallax2";
 import About from "../components/Home/About";
 import WhatTheySay from "../components/Home/WhatTheySay";
+import Blog from "../components/Home/Blog";
 
 const Home = () => {
   return (
     <>
       <Parallax />
-      {/* <MonthlyTheme /> */}
       <HowItWorks />
       <About />
-
       <WhatTheySay />
+      <Blog />
     </>
   );
 };

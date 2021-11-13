@@ -13,8 +13,7 @@ const styles = {
     textAlign: "center",
   },
   how: {
-    height: "50vh",
-    margin: "30px",
+    marginBottom: "6vh",
   },
 };
 
