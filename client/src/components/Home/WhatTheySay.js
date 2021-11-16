@@ -21,7 +21,7 @@ const WhatTheySay = () => {
   return (
     <>
       <div id="globalContainer">
-        <img id="global" src={globe} alt="how1" />
+        <img id="global1" src={globe} alt="globalInitiatives" />
         <img id="global" src={world} alt="how2" />
         <img
           style={styles.global}

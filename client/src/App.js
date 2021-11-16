@@ -18,6 +18,7 @@ import Footer from "./components/Footer/Footer";
 import BeanForm from "./pages/BeanForm";
 import Pricing from "./pages/Pricing";
 import Adamheader from "./components/Navbar/Adamheader";
+import ResponseNav from "./components/Navbar/ResponseNav";
 
 //creates graphql link
 const httpLink = createHttpLink({
@@ -46,7 +47,8 @@ function App() {
     <ApolloProvider client={client}>
       <Router>
         <div>
-          <Adamheader />
+          {/* <Adamheader /> */}
+          <ResponseNav />
 
           <Route exact path="/">
             <Home />

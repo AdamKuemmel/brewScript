@@ -5,7 +5,7 @@ import originLogo from "../images/originLogo.png";
 
 const styles = {
   origin: {
-    height: "15vh",
+    height: "1vh",
     marginTop: "12vh",
   },
   container: {
@@ -31,6 +31,16 @@ const About = () => {
           <img src={originLogo} alt="office" id="originPic" />
           <article>
             <div>
+              <p style={styles.p}>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet
+                eaque dolores atque ipsam pariatur perferendis.Lorem ipsum dolor
+                sit amet consectetur adipisicing elit. Amet eaque dolores atque
+                ipsam pariatur perferendis.Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Amet eaque dolores atque ipsam
+                pariatur perferendis.Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Amet eaque dolores atque ipsam pariatur
+                perferendis.
+              </p>
               <p style={styles.p}>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet
                 eaque dolores atque ipsam pariatur perferendis.Lorem ipsum dolor
