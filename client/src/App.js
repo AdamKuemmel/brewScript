@@ -17,6 +17,8 @@ import Header from "./components/Navbar/Header";
 import Footer from "./components/Footer/Footer";
 import BeanForm from "./pages/BeanForm";
 import Pricing from "./pages/Pricing";
+import Adamheader from "./components/Navbar/Adamheader";
+import ResponseNav from "./components/Navbar/ResponseNav";
 
 //creates graphql link
 const httpLink = createHttpLink({
@@ -44,34 +46,33 @@ function App() {
   return (
     <ApolloProvider client={client}>
       <Router>
-        <div className="flex-column justify-flex-start min-100-vh">
-          <Header />
+        <div>
+          {/* <Adamheader /> */}
+          <ResponseNav />
 
-          <div className="container">
-            <Route exact path="/">
-              <Home />
-            </Route>
-            <Route exact path="/home">
-              <Home />
-            </Route>
-            <Route exact path="/login">
-              <Login />
-            </Route>
-            <Route exact path="/signup">
-              <Signup />
-            </Route>
-            <Route exact path="/beanForm">
-              <BeanForm />
-            </Route>
-            <Route exact path="/Pricing">
-              <Pricing />
-            </Route>
-            <Route exact path="/me">
-              <UserLand />
-            </Route>
-          </div>
-          <Footer />
+          <Route exact path="/">
+            <Home />
+          </Route>
+          <Route exact path="/home">
+            <Home />
+          </Route>
+          <Route exact path="/login">
+            <Login />
+          </Route>
+          <Route exact path="/signup">
+            <Signup />
+          </Route>
+          <Route exact path="/beanForm">
+            <BeanForm />
+          </Route>
+          <Route exact path="/Pricing">
+            <Pricing />
+          </Route>
+          <Route exact path="/me">
+            <UserLand />
+          </Route>
         </div>
+        <Footer />
       </Router>
     </ApolloProvider>
   );

@@ -1,6 +1,10 @@
 import React from "react";
 import { useLocation, useHistory } from "react-router-dom";
-import { Dropdown, DropdownButton } from "react-bootstrap";
+import logoCoffee from "../images/logoCoffee.png";
+import insta from "../images/insta.png";
+import twitter from "../images/twitter.png";
+import facebook from "../images/facebook.png";
+import youtube from "../images/youtube.png";
 
 const styles = {
   buttonText: {
@@ -30,68 +34,101 @@ const Footer = () => {
   const location = useLocation();
   const history = useHistory();
   return (
-    <footer>
-      <div style={styles.container}>
-        <Dropdown>
-          <Dropdown.Toggle
-            id="dropdown-button-dark-example1"
-            drop="up"
-            variant="secondary"
-            style={styles.buttonText}
-          >
-            Contact
-          </Dropdown.Toggle>
+    <footer class="center footer mobileFooter ">
+      <div class="tabletFooter">
+        <img id="footerLogo" src={logoCoffee} alt="brewscriptlogo" />
+        <form
+          class="formCon"
+          name="emailForm"
+          action="https://formspree.io/f/xgerbeza"
+          method="POST"
+          enctype="multipart/form-data"
+        >
+          <input
+            class="contactBox"
+            id="contactBox"
+            type="text"
+            name="name"
+            placeholder="Your name"
+          />
+          <input
+            class="contactBox"
+            id="contactBox"
+            type="email"
+            name="_replyto"
+            placeholder="Your email"
+          />
 
-          <Dropdown.Menu variant="dark">
-            <Dropdown.Item href="#/action-1" active>
-              About us
-            </Dropdown.Item>
-            <Dropdown.Divider />
-            <Dropdown.Item
-              href="https://twitter.com/BrewScript"
-              target="_blank"
-            >
-              Twitter
-            </Dropdown.Item>
-            <Dropdown.Divider />
-            <Dropdown.Item
-              href="https://www.facebook.com/BrewScript"
-              target="_blank"
-            >
-              Facebook
-            </Dropdown.Item>
-            <Dropdown.Divider />
-            <Dropdown.Item
-              href="https://www.instagram.com/brewscript/"
-              target="_blank"
-            >
-              Instagram
-            </Dropdown.Item>
-          </Dropdown.Menu>
-        </Dropdown>
-        <Dropdown>
-          <Dropdown.Toggle
-            style={styles.buttonText}
-            drop="up"
-            variant="secondary"
-          >
-            Company
-          </Dropdown.Toggle>
+          <input
+            type="submit"
+            id="contactBox"
+            class="button2"
+            value="SIGN ME THE F**K UP"
+          />
+        </form>
 
-          <Dropdown.Menu variant="dark">
-            <Dropdown.Item href="#/action-1" active>
-              Our Story
-            </Dropdown.Item>
-            <Dropdown.Item href="#/action-2">Team</Dropdown.Item>
-            <Dropdown.Item href="#/action-3">Careers</Dropdown.Item>
-            <Dropdown.Divider />
-            <Dropdown.Item href="#/action-4">Blog</Dropdown.Item>
-          </Dropdown.Menu>
-        </Dropdown>
+        <h2 class="copyFooter">
+          All Materials &copy; 2021 | Site By AK Designs
+        </h2>
       </div>
-      <h4 style={styles.copyR}>
-        &copy; {new Date().getFullYear()} - BrewScript
-      </h4>
+      <div>
+        <div id="footerLinkContainer">
+          <div class="footerLinks">
+            <a href="#" class="footerWords">
+              Sign Up
+            </a>
+            <a href="#" class="footerWords">
+              Our Produce
+            </a>
+            <a href="#" class="footerWords">
+              Our Sourcing
+            </a>
+            <a href="#" class="footerWords">
+              About us
+            </a>
+            <a href="#" class="footerWords">
+              Refer Friends
+            </a>
+            <a href="#" class="footerWords">
+              Contact Us
+            </a>
+          </div>
+          <div class="footerLinks">
+            <a href="#" class="footerWords">
+              Blog
+            </a>
+            <a href="#" class="footerWords">
+              Careers
+            </a>
+            <a href="#" class="footerWords">
+              Press
+            </a>
+            <a href="#" class="footerWords">
+              Accessibility
+            </a>
+            <a href="#" class="footerWords">
+              FAQs
+            </a>
+            <a href="#" class="footerWords">
+              Help Center
+            </a>
+          </div>
+        </div>
+        <div id="socialContainer">
+          <a href="/home">
+            <img class="socials" src={insta} alt="treeLogo" />
+          </a>
+          <a href="/home">
+            <img class="socials" src={facebook} alt="treeLogo" />
+          </a>
+          <a href="/home">
+            <img class="socials" src={youtube} alt="treeLogo" />
+          </a>
+          <a href="/home">
+            <img class="socials" src={twitter} alt="treeLogo" />
+          </a>
+        </div>
+      </div>
     </footer>
   );
 };
