@@ -256,7 +256,7 @@ h1 {
 /* PARALAX HOMEPAGE STYLES */
 .akHome {
   background-image: url("../images/jumboCoffee.png");
-  background-size: cover;
+
   height: 100vh;
   background-attachment: fixed;
   background-position: center;
