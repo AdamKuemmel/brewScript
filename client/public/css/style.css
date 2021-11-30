@@ -193,7 +193,7 @@ h1 {
     flex-direction: column;
   }
   #originPic {
-    height: 10vh;
+    height: 8vh;
   }
   #aboutText {
     display: flex;
@@ -241,6 +241,15 @@ h1 {
   }
   #contactBox {
     width: 50vw;
+  }
+  .akHome {
+    background-attachment: scroll;
+  }
+  .tree {
+    height: 5vh;
+  }
+  .footerLogo {
+    height: 5vh;
   }
 }
 
@@ -549,8 +558,8 @@ header {
   height: 35px;
 }
 
-#footerLogo {
-  height: 8vh;
+.footerLogo {
+  height: 6vh;
   margin: 4vh 0;
 }
 #footerLinkContainer {

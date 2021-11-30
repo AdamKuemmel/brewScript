@@ -36,7 +36,7 @@ const Footer = () => {
   return (
     <footer class="center footer mobileFooter ">
       <div class="tabletFooter">
-        <img id="footerLogo" src={logoCoffee} alt="brewscriptlogo" />
+        <img class="footerLogo" src={logoCoffee} alt="brewscriptlogo" />
         <form
           class="formCon"
           name="emailForm"

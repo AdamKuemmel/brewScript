@@ -102,4 +102,7 @@
   .nav-icon {
     display: flex;
   }
+  .tree {
+    height: 6vh;
+  }
 }

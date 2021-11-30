@@ -43,12 +43,17 @@ const ResponseNav = () => {
         </li>
         {Auth.loggedIn() ? (
           <>
-            <Link className="nav-link" to="/me">
-              My Profile
-            </Link>
-            <button className="nav-link" onClick={logout}>
-              Logout
-            </button>
+            {" "}
+            <li className="nav-item">
+              <Link className="nav-link" to="/me">
+                My Profile
+              </Link>
+            </li>
+            <li className="nav-item">
+              <button className="nav-link" onClick={logout}>
+                Logout
+              </button>
+            </li>
           </>
         ) : (
           <>
