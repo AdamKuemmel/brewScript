@@ -2,18 +2,10 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { useMutation } from "@apollo/client";
 import { LOGIN_USER } from "../../utils/mutations";
-import halloweenbat from "../images/halloweenbat.png";
-
+import "./logs.css";
 import Auth from "../../utils/auth";
 
-const styles = {
-  img4: {
-    display: "block",
-    marginLeft: "auto",
-    marginRight: "auto",
-    width: "50%",
-  },
-};
+const styles = {};
 
 const Logs = (props) => {
   const [formState, setFormState] = useState({ email: "", password: "" });
@@ -52,67 +44,47 @@ const Logs = (props) => {
 
   return (
     <>
-      <main className="d-flex justify-content-center mb-4">
-        <div className="col-12 col-lg-10">
-          <div className="card">
-            <div className="card-body">
-              {data ? (
-                <p>
-                  Success! You may now head{" "}
-                  <Link to="/">back to the homepage.</Link>
-                </p>
-              ) : (
-                <form onSubmit={handleFormSubmit}>
-                  <input
-                    className="form-input"
-                    placeholder="Your email"
-                    name="email"
-                    type="email"
-                    value={formState.email}
-                    onChange={handleChange}
-                  />
-                  <input
-                    className="form-input"
-                    placeholder="******"
-                    name="password"
-                    type="password"
-                    value={formState.password}
-                    onChange={handleChange}
-                  />
-                  <button
-                    className="btn btn-block btn-info"
-                    style={{ cursor: "pointer" }}
-                    type="submit"
-                  >
-                    Submit
-                  </button>
-                </form>
-              )}
+      <main class="card">
+        <div className="card-body">
+          {data ? (
+            <p>
+              Success! You may now head{" "}
+              <Link to="/">back to the homepage.</Link>
+            </p>
+          ) : (
+            <form class="form" onSubmit={handleFormSubmit}>
+              <label id="loginWords">Login to access your Brewscription!</label>
+              <input
+                class="input"
+                placeholder="Your email"
+                name="email"
+                type="email"
+                value={formState.email}
+                onChange={handleChange}
+              />
+              <input
+                class="input2"
+                placeholder="******"
+                name="password"
+                type="password"
+                value={formState.password}
+                onChange={handleChange}
+              />
+              <button
+                class="button"
+                style={{ cursor: "pointer" }}
+                type="submit"
+              >
+                Submit
+              </button>
+            </form>
+          )}
 
-              {error && (
-                <div className="my-3 p-3 bg-danger text-white">
-                  {error.message}
-                </div>
-              )}
-            </div>
-          </div>
+          {error && (
+            <div className="my-3 p-3 bg-danger text-white">{error.message}</div>
+          )}
         </div>
       </main>
-      <img
-        src={halloweenbat}
-        // onClick={() => handlePageChange("Home")}
-        style={styles.img4}
-      />
-      <img
-        src={halloweenbat}
-        // onClick={() => handlePageChange("Home")}
-        style={styles.img4}
-      />
-      <img
-        src={halloweenbat}
-        // onClick={() => handlePageChange("Home")}
-        style={styles.img4}
-      />
     </>
   );
 };

@@ -3,11 +3,7 @@ import { useQuery } from "@apollo/client";
 import Logs from "../components/Login-signup/Logs";
 
 const Login = () => {
-  return (
-    <main>
-      <Logs />
-    </main>
-  );
+  return <Logs />;
 };
 
 export default Login;
